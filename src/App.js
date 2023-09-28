@@ -1,21 +1,14 @@
 import './App.css';
 import Header from './components/Header';
-import Login from './components/Login';
 import { Outlet } from 'react-router-dom';
+import Footer from './pages/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-          <h1 className=" bg-indigo-400 h-16 text-3xl font-bold flex items-center  ">
-      Car Mantainance App
+    <h1 className="bg-gray-400 h-14 m-3 pb-4 font-extrabold rounded-lg text-slate-600 items-center">
+      <Header />
+      <Outlet />
+      <Footer />
     </h1>
-    <Header />  
-    <Login />
-    <Outlet />
-
-   
-    </div>
-  );
+  )
 }
-
-export default App;
