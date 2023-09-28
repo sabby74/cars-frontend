@@ -10,14 +10,14 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Index from "./pages/Index";
 import Show from "./pages/Show";
-import { ServiceLoader ,UserLoader, SignUpLoader} from "./loaders";
+import { ServiceLoader ,SignUpLoader,UserLoader, } from "./loaders";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="/signup" element={<SignUp loader={SignUpLoader}/>} />
-      <Route path="/login" element={<Login loader={UserLoader}/>} />
-      <Route path="" element={<Index loader={ServiceLoader}/>} />
+      <Route path="/signup" element={<SignUp />} loader={SignUpLoader} /> 
+      <Route path="/login" element={<Login />} loader={UserLoader} />
+      <Route path="" element={<Index />} loader={ServiceLoader} />
       <Route path=":id" element={<Show />} />
       <Route path="create" />
       <Route path="update/:id" />

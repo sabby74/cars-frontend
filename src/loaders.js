@@ -15,14 +15,8 @@ export const ServiceLoader = async () => {
     return users
   }
 
-  export const SignUpLoader = async (data) => {
-    const res = await fetch(URL + "/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data),
-    })
-    const user = await res.json()
-    return user
-  }
+export const SignUpLoader = async () => {
+    const res = await fetch(URL + "/signup")
+    const signups = await res.json()
+    return signups
+}
