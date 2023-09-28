@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://carsapp-pgj8.onrender.com/user', {
+      const response = await axios.post('https://carsapp-pgj8.onrender.com/', {
         username,
         password,
       });
