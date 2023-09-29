@@ -101,13 +101,15 @@ const Index = () => {
               Wiper Blades Change : {service.wiperBladesChange ? "yes" : "No"}
             </h2>
             <h2>Coolant Change : {service.coolantChange ? "yes" : "No"}</h2>
+            <br />
             <Form action={`/delete/${service._id} `} method="post">
-              <button type="submit" className="rounded-full bg-slate-300 p-2">
+              <button type="submit" className="rounded-full bg-slate-300 p-2 hover:italic">
                 Delete {service.carName}  scheduled service
               </button>
             </Form>
+            <br />
             <Link  to={`/${service._id}/edit`}>
-          <button type="submit" className="rounded-full bg-green-400 p-4">
+          <button type="submit" className="rounded-full bg-green-400 p-4 hover:italic">
             Edit {service.carName} scheduled service
           </button>
             

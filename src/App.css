@@ -30,8 +30,8 @@
   align-items: center;
   justify-content: center;
   background-color: #282c34;
-  padding: 10px;
-  margin: 50px;
+  padding: 50px;
+  margin: 20px;
   border-radius: 15px;
 }
 .create{
@@ -61,7 +61,7 @@
   justify-content: space-between;
   background-color: #282c34;
   padding: 40px;
-  margin: 70px;
+  margin: 100px;
   border-radius: 15px;
   color: #626770
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <nav className="flex flex-row justify-around p-4 mb-6  " >
+    <nav className="flex flex-row justify-around p-4 mb-6 " >
       
         <Link className="hover:italic" to="/login">
           <div>Login</div>
@@ -14,7 +14,7 @@ const Header = () => {
         <Link className="hover:italic" to="/">
           <div>Cars Maintainance App Home </div>
         </Link>
-        <Link className="hover:italic" to="/logout">
+        <Link className="hover:italic" to="/">
           <div>Logout </div>
         </Link>
       </nav>
