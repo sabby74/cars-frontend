@@ -10,7 +10,9 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Index from "./pages/Index";
 import Show from "./pages/Show";
-import { ServiceLoader ,SignUpLoader,UserLoader, } from "./loaders";
+import { ServiceLoader ,showLoader,SignUpLoader,UserLoader, } from "./loaders";
+import { createAction, deleteAction, updateAction } from "./actions";
+import Update from "./pages/Update";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,10 +20,11 @@ const router = createBrowserRouter(
       <Route path="/signup" element={<SignUp />} loader={SignUpLoader} /> 
       <Route path="/login" element={<Login />} loader={UserLoader} />
       <Route path="" element={<Index />} loader={ServiceLoader} />
-      <Route path=":id" element={<Show />} />
-      <Route path="create" />
-      <Route path="update/:id" />
-      <Route path="delete/:id" />
+      <Route path=":id" element={<Show />} loader={showLoader}/>
+      <Route path=":id/edit" element={<Update />}  loader={showLoader}/>
+      <Route path="create" action={createAction}/>
+      <Route path="update/:id" action={updateAction} />
+      <Route path="delete/:id" action={deleteAction}/>
      
     </Route>
   )

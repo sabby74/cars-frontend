@@ -2,11 +2,17 @@ const URL = 'https://carsapp-pgj8.onrender.com';
 
 
 export const ServiceLoader = async () => {
-    const res = await fetch(URL + "/service")
-    const services = await res.json()
-    console.log(services);
-    return services
-  }
+  const res = await fetch(URL + "/service")
+  const services = await res.json()
+  console.log(services);
+  return services
+}
+export const showLoader = async ({ params }) => {
+  console.log(params, "showLoader");
+  const res = await fetch(URL + "/service/" + params.id);
+  const service = await res.json();
+  return service;
+};
 
 
   export const UserLoader = async () => {

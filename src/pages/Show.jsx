@@ -1,8 +1,12 @@
 import React from 'react'
+import { useLoaderData } from 'react-router-dom'
 
 const Show = () => {
   return (
-    <div>Show</div>
+    <div className='show'>
+      <h1>show page</h1>
+     
+      </div>
   )
 }
 
