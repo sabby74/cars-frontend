@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div>
       <div className="create">
-        <h1 className="underline text-slate-400">Create A Service For Your Car</h1>
+        <h1 className="underline text-slate-700 bg-yellow-400 rounded p-1 m-1">Create A Service For Your Car</h1>
         <br />
         <Form action="/create" method="post">
           car Name:

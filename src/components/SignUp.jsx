@@ -11,6 +11,7 @@ const SignUp = () => {
     console.log(handleSignup);
     try {
       const response = await axios.post('https://carsapp-pgj8.onrender.com', {
+        name,
         username,
         password,
       });

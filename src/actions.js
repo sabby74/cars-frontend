@@ -72,6 +72,29 @@ export const updateAction = async ({ params,request }) => {
   };
 
 
+  export const signUpAction = async ({ request }) => {
+    // get data from form
+    const formData = await request.formData();
+    // set up our new person to match schema
+    const newUser = {
+      name: formData.get("name"),
+      username: formData.get("username"),
+      password: formData.get("password"),
+    };
+    // Send new person to our API
+    console.log(newUser, ":user to be created");
+    await fetch(URL + "/user/signup", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newUser),
+    });
+    // redirect to home page
+    return redirect("/");
+    
+  }
+
 
 
 
