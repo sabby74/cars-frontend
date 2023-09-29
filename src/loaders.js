@@ -7,8 +7,8 @@ export const ServiceLoader = async () => {
   console.log(services);
   return services
 }
-export const showLoader = async ({ params }) => {
-  console.log(params, "showLoader");
+export const ShowLoader = async ({ params }) => {
+  console.log(params, "ShowLoader");
   const res = await fetch(URL + "/service/" + params.id);
   const service = await res.json();
   return service;

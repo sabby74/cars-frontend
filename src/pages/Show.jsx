@@ -5,19 +5,26 @@ const Show = () => {
   const service = useLoaderData();
   return (
     <div className="show">
-      <h1>{service.carName}</h1>
-      <h1>{service.carModel}</h1>
-      <h3>{service.tireRotation ? "yes" : "No"}</h3>
-      <h3>{service.airFilter ? "yes" : "No"}</h3>
-      <h3>{service.breakCheck ? "yes" : "No"}</h3>
-      <h3>{service.batteryCheck ? "yes" : "No"}</h3>
-      <h3>{service.brakePadChange ? "yes" : "No"}</h3>
-      <h3>{service.transmissionOilChange ? "yes" : "No"}</h3>
-      <h3>{service.cabinAirFilterChange ? "yes" : "No"}</h3>
-      <h3>{service.engineAirFilter ? "yes" : "No"}</h3>
-      <h3>{service.wiperBladesChange ? "yes" : "No"}</h3>
-      <h3>{service.mileage}</h3>
-      <h3>{service.coolantChange ? "yes" : "No"}</h3>
+      <h1 className="underline text-slate-300 font-extrabold">Cars name : {service.carName}</h1>
+      <br />
+      <h1 className="underline text-slate-300">Car Model : {service.carModel}</h1>
+      <br />
+      <h1 className="underline text-slate-300"> Service Scheduled </h1>
+      <br />
+      <div className="text-slate-400 ">
+      <h3>Oil Change : {service.oilChange ? "yes" : "No"}</h3>
+      <h3>Tire Rotation :{service.tireRotation ? "yes" : "No"}</h3>
+      <h3>Air Filter : {service.airFilter ? "yes" : "No"}</h3>
+      <h3>Brake Check : {service.breakCheck ? "yes" : "No"}</h3>
+      <h3>Battery Check : {service.batteryCheck ? "yes" : "No"}</h3>
+      <h3>Brakes Pad Change : {service.brakePadChange ? "yes" : "No"}</h3>
+      <h3>Transmission Oil Change : {service.transmissionOilChange ? "yes" : "No"}</h3>
+      <h3>Cabin Air Filter Change : {service.cabinAirFilterChange ? "yes" : "No"}</h3>
+      <h3>Engine Air Filter Change : {service.engineAirFilter ? "yes" : "No"}</h3>
+      <h3>Wiper Blades Change : {service.wiperBladesChange ? "yes" : "No"}</h3>
+      <h3>Mileage : {service.mileage}</h3>
+      <h3>Coolant Change or Topup: {service.coolantChange ? "yes" : "No"}</h3>
+      </div>
     </div>
   );
 };
