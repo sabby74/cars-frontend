@@ -108,7 +108,7 @@ const Index = () => {
             </Form>
             <Link  to={`/${service._id}/edit`}>
           <button type="submit" className="rounded-full bg-green-400 p-4">
-            Edit {service.carName}
+            Edit {service.carName} scheduled service
           </button>
             
           </Link>

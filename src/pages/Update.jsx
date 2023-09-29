@@ -20,7 +20,7 @@ const Update = () => {
       <Form action={`/update/${service._id}`} method="post">
         Cars Name:
         <input
-          type="text"
+          type="input"
           name="carName"
           value={formData.carName}
           onChange={handleChange}
