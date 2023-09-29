@@ -22,10 +22,10 @@ const Login = () => {
   };
 
   return (
-    <div className='bg-slate-700 flex flex-row justify-around p-10 m-6 rounded-lg text-slate-400  '>
+    <div className='bg-green-700 flex flex-row justify-around p-10 m-6 rounded-lg text-slate-700 t '>
       <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
       <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleLogin}>Login</button>
+      <button className="rounded bg-green-400 p-2 hover:italic" onClick={handleLogin}>Login</button>
     </div>
   );
 };

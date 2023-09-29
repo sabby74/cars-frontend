@@ -22,7 +22,7 @@ export const ShowLoader = async ({ params }) => {
   }
 
 export const SignUpLoader = async () => {
-    const res = await fetch(URL + "/signup")
+    const res = await fetch(URL + "/user/signup")
     const signups = await res.json()
     return signups
 }

@@ -24,11 +24,11 @@ const SignUp = () => {
   };
 
   return (
-    <div className='bg-slate-500 flex flex-row justify-around p-10 m-6 rounded-lg '>
+    <div className='bg-blue-600 flex flex-row justify-around p-10 m-6 rounded-lg '>
       <input type="text" placeholder="name" onChange={(e) => setname(e.target.value)} />
       <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
       <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleSignup}>Signup</button>
+      <button className="rounded bg-blue-300 p-2 hover:italic" onClick={handleSignup}>Signup</button>
     </div>
   );
 };
