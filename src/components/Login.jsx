@@ -3,13 +3,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const Login = () => {
-    console.log("log coming from Login.js");
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('https://carsapp-pgj8.onrender.com/', {
+      const response = await axios.post('https://carsapp-pgj8.onrender.com/user/login', {
         username,
         password,
       });
