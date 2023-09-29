@@ -76,7 +76,7 @@ const Index = () => {
             <h1>Current Mileage: {service.mileage} miles</h1>
 
             <br />
-            <h1 className="underline text-slate-400">Service Required</h1>
+            <h1 className="underline text-slate-700 bg-yellow-400 rounded p-1 m-1 " >Service Required</h1>
             <br />
             <h2>oil change : {service.oilChange ? "yes" : "No"}</h2>
             <h2>Tire Rotation : {service.tireRotation ? "yes" : "No"}</h2>

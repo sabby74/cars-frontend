@@ -5,9 +5,9 @@ const Show = () => {
   const service = useLoaderData();
   return (
     <div className="show">
-      <h1 className="underline text-slate-300 font-extrabold">Cars name : {service.carName}</h1>
+      <h1 className="underline text-slate-700 font-extrabold bg-blue-400 rounded p-2 m-2 ">Cars name : {service.carName}</h1>
       <br />
-      <h1 className="underline text-slate-300">Car Model : {service.carModel}</h1>
+      <h1 className="underline text-slate-700 bg-yellow-400 rounded p-1 m-1">Car Model : {service.carModel}</h1>
       <br />
       <h1 className="underline text-slate-300"> Service Scheduled </h1>
       <br />
