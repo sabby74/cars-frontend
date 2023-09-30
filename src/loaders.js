@@ -2,6 +2,7 @@ const URL = 'http://localhost:7070';
 
 
 export const ServiceLoader = async () => {
+
   const res = await fetch(URL + "/service", {
     credentials: "include",
   } )
@@ -14,6 +15,7 @@ export const ShowLoader = async ({ params }) => {
   const res = await fetch(URL + "/service/" + params.id, {
     credentials: "include",
   });
+
   const service = await res.json();
   return service;
 };

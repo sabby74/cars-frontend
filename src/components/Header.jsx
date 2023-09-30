@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <nav className="flex flex-row justify-around p-4 mb-6 " >
       
@@ -14,9 +16,10 @@ const Header = () => {
         <Link className="hover:italic" to="/">
           <div>Cars Maintainance App Home </div>
         </Link>
-        <Link className="hover:italic" to="/">
-          <div>Logout </div>
-        </Link>
+      
+        <button className="bd-red" onClick={() => navigate("/logout")}>
+        Logout
+      </button>
       </nav>
   )
 }

@@ -11,6 +11,7 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
+
       const response = await axios.post(
         "http://localhost:7070/user/login",
         {
@@ -23,6 +24,7 @@ const Login = () => {
             "Content-Type": "application/json",
           },
         }
+
       );
 
       // Handle the token received in the response (store it, set authentication state, etc.)
