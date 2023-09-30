@@ -17,7 +17,7 @@ import Update from "./pages/Update";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
-      <Route path="/login" element={<Login />} loader={UserLoader} />
+      <Route path="/login" element={<Login />}  />
       <Route path="/signup" element={<SignUp />} loader={SignUpLoader} action={signUpAction} /> 
       <Route path="" element={<Index />} loader={ServiceLoader} />
       <Route path=":id" element={<Show />} loader={ShowLoader}/>
