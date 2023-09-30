@@ -14,7 +14,9 @@ const Login = () => {
       const response = await axios.post('https://carsapp-pgj8.onrender.com/user/login', {
         username,
         password,
-      });
+      },
+      { withCredentials: true }
+      );
 
       // Handle the token received in the response (store it, set authentication state, etc.)
       
