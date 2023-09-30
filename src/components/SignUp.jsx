@@ -10,7 +10,7 @@ const SignUp = () => {
   const handleSignup = async () => {
     console.log(handleSignup);
     try {
-      const response = await axios.post('http://localhost:7070/user/signup', {
+      const response = await axios.post('https://carsapp-pgj8.onrender.com/user/signup', {
         name,
         username,
         password,
