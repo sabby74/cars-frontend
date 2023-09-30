@@ -14,7 +14,7 @@ const Login = () => {
       });
 
       // Handle the token received in the response (store it, set authentication state, etc.)
-      console.log(response.data.token);
+      console.log(response.data);
     } catch (error) {
       console.error('Login failed', error);
     }
